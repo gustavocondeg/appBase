@@ -1,0 +1,60 @@
+﻿
+<div class="row">
+    <div class="col-md-4">
+        <form>
+
+            <div class="form-group">
+                <label for="exampleDDL">Drop Down List</label>
+                <input id="exampleDDL"
+                       data-role="dropdownlist"
+                       data-auto-bind="false"
+                       data-value-primitive="true"
+                       data-text-field="ProductName"
+                       data-value-field="ProductID"
+                       data-bind="value: DDL.selectedProduct,
+                              source: DDL.products,
+                              visible: DDL.isVisible,
+                              enabled: DDL.isEnabled,
+                              events: {
+                                change: DDL.onChange,
+                                open: DDL.onOpen,
+                                close: DDL.onClose
+                              }"
+                       style="width: 100%;" />
+            </div>
+
+            <div class="form-group">
+                <label for="exampleMultiSelect">MultiSelect</label>
+                <select id="exampleMultiSelect"
+                        data-role="multiselect"
+                        data-placeholder="Type a product e.g. 'Chai'"
+                        data-value-primitive="true"
+                        data-text-field="ProductName"
+                        data-value-field="ProductID"
+                        data-bind="value: ML.selectedProductMS,
+                              source: ML.products,
+                              visible: ML.isVisible,
+                              enabled: ML.isEnabled,
+                              events: {
+                                change: ML.onChange,
+                                open: ML.onOpen,
+                                close: ML.onClose
+                              }"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleDatePicker">DatePicker</label>
+                <input id="exampleDatePicker"
+                       data-role="datepicker"
+                       data-bind="visible: DatePicker.isVisible,
+                              enabled: DatePicker.isEnabled,
+                              value: DatePicker.selectedDate"
+                       style="width: 100%">
+            </div>
+
+
+        </form>
+    </div>
+    <div class="col-md-8"></div>
+</div>
+

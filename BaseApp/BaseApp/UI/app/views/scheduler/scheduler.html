@@ -1,0 +1,14 @@
+﻿
+<div class="row">
+    <div class="scheduler-container col-md-12">
+        <div id="scheduler-demo" data-role="scheduler"
+             data-views="['day', 'week', 'month']"
+             data-bind="source: tasks,
+                            visible: isVisible,
+                            events: {
+                                save: onSave,
+                                dataBound:onDataBound
+                            }"></div>
+    </div>
+</div>
+

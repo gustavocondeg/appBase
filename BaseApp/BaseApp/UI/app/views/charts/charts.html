@@ -1,0 +1,19 @@
+﻿
+<div class="row">
+    <div class="col-md-12">
+        <div id="chart"
+             data-role="chart"
+             data-legend="{ position: 'bottom' }"
+             data-series-defaults="{ type: 'area' }"
+             data-series="[
+                                 { field: 'nuclear', name: 'Nuclear electricity' },
+                                 { field: 'hydro', name: 'Hydro electricity' },
+                                 { field: 'wind', name: 'Wind electricity' }
+                             ]"
+             data-bind="visible: isVisible,
+                            source: electricity,
+                            events: { seriesHover: onSeriesHover }"
+             style="height: 500px;"></div>
+    </div>
+</div>
+

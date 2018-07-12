@@ -1,0 +1,45 @@
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li>
+            <a class="sidebar-brand" href="\\#">
+                <img src="http://placehold.it/30x30"/><span>#:App.name#&nbsp;v<small>#:App.version#</small></span>
+            </a>
+            <div id="toggleMenu" data-bind="click: toggleMenu"><i class="fa fa-chevron-circle-left"></i></div>
+        </li>
+        <li data-bind="css:{active: setActiveLocation('/welcome')}">
+            <a href="\\#/welcome" title="Home">
+                <i class="fa fa-home"></i><span>&nbsp;Home</span>
+            </a>
+        </li>
+        <li data-bind="css:{active: setActiveLocation('/')}">
+            <a href="\\#" title="MVVM Info">
+                <i class="fa fa-info"></i><span>&nbsp;MVVM Info</span>
+            </a>
+        </li>
+        <li data-bind="css:{active: setActiveLocation('/grid')}">
+            <a href="\\#/grid" title="Grid">
+                <i class="fa fa-table"></i><span>&nbsp;Grid</span>
+            </a>
+        </li>
+        <li data-bind="css:{active: setActiveLocation('/scheduler')}">
+            <a href="\\#/scheduler" title="Scheduler">
+                <i class="fa fa-calendar"></i><span>&nbsp;Scheduler</span>
+            </a>
+        </li>
+        <li data-bind="css:{active: setActiveLocation('/charts')}">
+            <a href="\\#/charts" title="Charts">
+                <i class="fa fa-bar-chart"></i><span>&nbsp;Charts</span>
+            </a>
+        </li>
+        <li data-bind="css:{active: setActiveLocation('/tabstrip')}">
+            <a href="\\#/tabstrip" title="Tabstrip">
+                <i class="fa fa-tasks"></i><span>&nbsp;Tabstrip</span>
+            </a>
+        </li>
+        <li data-bind="click: openWindow">
+            <a href="javascript:void(0)">
+                <i class="fa fa-windows"></i><span>&nbsp;Window</span>
+            </a>
+        </li>
+    </ul>
+</div>

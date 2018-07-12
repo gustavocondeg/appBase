@@ -1,0 +1,17 @@
+[
+  {
+    "outputFileName": "UI/css/app.min.css",
+    "inputFiles": [
+      "UI/libs/css/animations.css",
+      "UI/libs/bootstrap/css/bootstrap.min.css",
+      "UI/libs/bootstrap/css/bootstrap-theme.min.css",
+      "UI/libs/kendo/css/kendo.common-bootstrap.min.css",
+      "UI/libs/kendo/css/kendo.bootstrap.min.css",
+      "UI/libs/font-awesome/css/font-awesome.min.css",
+      "UI/app/views/layout/layout.css",
+      "UI/app/views/navbar/navbar.css",
+      "UI/app/views/asideBar/asideBar.css",
+      "UI/css/app.css"
+    ]
+  }
+]

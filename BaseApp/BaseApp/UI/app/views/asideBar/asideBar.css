@@ -1,0 +1,119 @@
+﻿#sidebar-wrapper {
+    position: fixed;
+    width: 30rem;
+    background-color: black;
+    height: 100%;
+    color: white;
+    font-weight: 700;
+    z-index: 9999999;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+
+    #sidebar-wrapper.tinyMenu {
+        width: 4.5rem;
+    }
+
+#toggleMenu {
+    color: darkgrey;
+    position: fixed;
+    bottom: 0.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+}
+
+    #toggleMenu:hover {
+        text-shadow: 0 0 3px white;
+    }
+
+#content {
+    margin-left: 30rem;
+    padding-top: 1.5rem;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    -webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+}
+
+    #content.tinyMenu {
+        margin-left: 4.5rem;
+    }
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .sidebar-nav li {
+        /*text-indent: 20px;*/
+        line-height: 40px;
+    }
+
+        .sidebar-nav li.active {
+            background-color: #444444;
+            border-left: 5px white solid;
+        }
+
+        .sidebar-nav li a {
+            display: block;
+            text-decoration: none;
+            color: #999999;
+        }
+
+            .sidebar-nav li a i {
+                margin-left: 1.5rem;
+                margin-right: 1rem;
+            }
+
+            .sidebar-nav li a:hover {
+                text-decoration: none;
+                color: #fff;
+                background: rgba(255,255,255,0.2);
+            }
+
+            .sidebar-nav li a:active,
+            .sidebar-nav li a:focus {
+                text-decoration: none;
+            }
+
+.sidebar-brand {
+    height: 4.8rem;
+    margin-top: 0.4rem;
+}
+
+    .sidebar-brand img {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    }
+
+#main-navbar {
+    margin-left: 30rem;
+}
+
+    #main-navbar.tinyMenu {
+        margin-left: 4.5rem;
+    }

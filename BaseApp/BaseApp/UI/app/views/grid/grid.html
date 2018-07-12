@@ -1,0 +1,27 @@
+﻿
+<div class="row" style="min-height: 100%;height: 100%;">
+
+    <div class="col-md-12">
+
+        <div id="demoGrid" data-role="grid"
+             data-editable="true"
+             data-filterable="true"
+             data-sortable="true"
+             data-toolbar=""
+             data-auto-bind="false"
+             data-columns="[{ 'field': 'DeptDesc'},
+                        { 'field': 'PLDesc' },
+                        { 'field': 'UpTime' },
+                        { 'field': 'DownTime' },
+                        { 'field': 'ValueStream'}
+                       ]"
+             data-bind="source: products,
+                            visible: isVisible,
+                            events: {
+                              save: onSave,
+                               dataBound: onDataBound
+                            }"
+             style="height: 500px"></div>
+    </div>
+</div>
+

@@ -1,0 +1,9 @@
+﻿#main-navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+} 
+
+#content {
+     margin-top: 5rem;
+ }
